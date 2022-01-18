@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.myNav {
+	background-image: linear-gradient(to right, #f79240, #eb3737);
+	height: 200px;
+	color: #fff;
+}
+
+.activeLink,
+.activeLink:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-radius: 14px;
+	cursor: pointer;
+	text-decoration: none;
+}

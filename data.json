@@ -1,0 +1,130 @@
+[
+	{
+		"firstName": "Gypsy",
+		"lastName": "Hardinge",
+		"image": "images/1.jpg",
+		"major": "Engineering",
+		"mutual_interests": 1,
+		"university": "University of Toronto"
+	},
+	{
+		"firstName": "Diane",
+		"lastName": "Lansdowne",
+		"image": "images/2.jpg",
+		"major": "Law",
+		"mutual_interests": 2,
+		"university": "McMaster University"
+	},
+	{
+		"firstName": "Klavdia",
+		"lastName": "Dedova",
+		"image": "images/3.jpg",
+		"major": "Law",
+		"mutual_interests": 3,
+		"university": "University of Toronto"
+	},
+	{
+		"firstName": "Mariano",
+		"lastName": "Rasgado",
+		"image": "images/4.jpg",
+		"major": "Science",
+		"mutual_interests": 4,
+		"university": "McMaster University"
+	},
+	{
+		"firstName": "Tod",
+		"lastName": "Geator",
+		"image": "images/5.jpg",
+		"major": "Science",
+		"mutual_interests": 1,
+		"university": "Western University"
+	},
+	{
+		"firstName": "Arny",
+		"lastName": "Stailey",
+		"image": "images/4.jpg",
+		"major": "Engineering",
+		"mutual_interests": 4,
+		"university": "York University"
+	},
+	{
+		"firstName": "Warden",
+		"lastName": "Lucks",
+		"image": "images/8.jpg",
+		"major": "Engineering",
+		"mutual_interests": 3,
+		"university": "Western University"
+	},
+	{
+		"firstName": "Mattie",
+		"lastName": "Yallop",
+		"image": "images/8.jpg",
+		"major": "Architecture",
+		"mutual_interests": 3,
+		"university": "McMaster University"
+	},
+	{
+		"firstName": "Kile",
+		"lastName": "Gotobed",
+		"image": "images/2.jpg",
+		"major": "Architecture",
+		"mutual_interests": 1,
+		"university": "University of Toronto"
+	},
+	{
+		"firstName": "Milly",
+		"lastName": "Khadir",
+		"image": "images/1.jpg",
+		"major": "Law",
+		"mutual_interests": 2,
+		"university": "McMaster University"
+	},
+	{
+		"firstName": "Armand",
+		"lastName": "Hedgea",
+		"image": "images/3.jpg",
+		"major": "Science",
+		"mutual_interests": 3,
+		"university": "York University"
+	},
+	{
+		"firstName": "Alvin",
+		"lastName": "Holgan",
+		"image": "images/4.jpg",
+		"major": "Architecture",
+		"mutual_interests": 4,
+		"university": "University of Toronto"
+	},
+	{
+		"firstName": "Adan",
+		"lastName": "Bohea",
+		"image": "images/3.jpg",
+		"major": "Science",
+		"mutual_interests": 4,
+		"university": "Western University"
+	},
+	{
+		"firstName": "Caryn",
+		"lastName": "Pudan",
+		"image": "images/6.jpg",
+		"major": "Law",
+		"mutual_interests": 2,
+		"university": "York University"
+	},
+	{
+		"firstName": "Willy",
+		"lastName": "Brohan",
+		"image": "images/7.jpg",
+		"major": "Engineering",
+		"mutual_interests": 3,
+		"university": "Western University"
+	},
+	{
+		"firstName": "Barney",
+		"lastName": "Stinson",
+		"image": "images/8.jpg",
+		"major": "Architecture",
+		"mutual_interests": 1,
+		"university": "York University"
+	}
+]

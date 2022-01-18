@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="explore.css" />
+		<script type="text/javascript" src="explore.js"></script>
+		<script type="text/javascript" src="data.json"></script>
+		<title>Buzzerr</title>
+	</head>
+	<body onload="loadData()">
+		<div>
+			<!-- NAVBAR  -->
+			<div class="myNav pt-2">
+				<div class="container-fluid">
+					<nav
+					class="navbar navbar-expand-lg navbar-light container-fluid p-2"
+				>
+					<div class="row">
+						<div class="col">
+							<h2><a href="index.html">Buzzerr</a></h2>
+						</div>
+					</div>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mr-auto ml-auto p-2 justify-content-center">
+							<li class="nav-item mr-5">
+								<a href="index.html" class=" px-2"
+									><span
+										><i
+											class="fas fa-home mr-1"
+											style="font-size: 18px"
+										></i
+										>Home</span
+									></a
+								>
+							</li>
+
+							<li class="nav-item mr-5">
+								<a href="explore.html" class="activeLink px-2"
+									><span
+										><i
+											class="fas fa-compass mr-1"
+											style="font-size: 18px"
+										></i
+										>Explore</span
+									></a
+								>
+							</li>
+							<li class="nav-item mr-5">
+								<a href="events.html" class="px-2"
+									><span
+										><i
+											class="fas fa-calendar-check mr-1"
+											style="font-size: 18px"
+										></i
+										>Events</span
+									></a
+								>
+							</li>
+							<li class="nav-item mr-5">
+								<a href="jobs.html" class="px-2"
+									><span
+										><i
+											class="fas fa-suitcase mr-1"
+											style="font-size: 18px"
+										></i
+										>Jobs</span
+									></a
+								>
+							</li>
+							<li class="nav-item mr-5">
+								<a href="messages.html" class="px-2"
+									><span
+										><i
+											class="fas fa-comment mr-1"
+											style="font-size: 18px"
+										></i
+										>Messages</span
+									></a
+								>
+							</li>
+						</ul>
+
+						<div class="float-right px-3 d-none d-lg-block">
+							<i class="fas fa-search mx-2"></i>
+							<i class="fas fa-bell mx-2"></i>
+							<img
+								class="rounded-circle mx-2"
+								style="width: 30px; height: 30px"
+								src="images/1.jpg"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<!-- BODY -->
+					<div class="myBody">
+						<div class="card">
+							<div class="row">
+								<div class="col-lg-3 myBorderRight col-sm-12 col-xs-12">
+									<div class="p-4 text-center">
+										<h5>Students with your</h5>
+										<h5>areas of interest</h5>
+									</div>
+
+									<div class="container">
+										<div class="donut-chart-block">
+											<div class="donut-chart">
+												<div
+													title="McMaster University"
+													id="section1"
+													class="clip"
+												>
+													<div
+														onclick="loadMcMaster()"
+														class="item"
+														data-rel="21"
+													></div>
+												</div>
+												<div
+													title="Western University"
+													id="section2"
+													class="clip"
+												>
+													<div
+														onclick="loadWestern()"
+														class="item"
+														data-rel="39"
+													></div>
+												</div>
+												<div
+													title="York University"
+													id="section3"
+													class="clip"
+												>
+													<div
+														onclick="loadYork()"
+														class="item"
+														data-rel="31"
+													></div>
+												</div>
+												<div
+													title="University of Toronto"
+													id="section4"
+													class="clip"
+												>
+													<div
+														onclick="loadToronto()"
+														class="item"
+														data-rel="9"
+													></div>
+												</div>
+												<div
+													onclick="showAll()"
+													class="myCenter"
+												></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="container px-5">
+										<ul class="torontoClass">
+											<li class="mb-2">
+												University of Toronto
+												<span
+													class="mt-2 float-right font-weight-bold"
+												>
+													65%
+												</span>
+											</li>
+										</ul>
+
+										<ul class="mcMasterClass">
+											<li class="mb-2">
+												McMaster University
+												<span
+													class="mt-2 float-right font-weight-bold"
+												>
+													15%
+												</span>
+											</li>
+										</ul>
+
+										<ul class="yorkClass">
+											<li class="mb-2">
+												York University
+												<span
+													class="mt-2 float-right font-weight-bold"
+												>
+													15%
+												</span>
+											</li>
+										</ul>
+
+										<ul class="westernClass">
+											<li class="mb-2">
+												Western University
+												<span
+													class="mt-2 float-right font-weight-bold"
+												>
+													10%
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-9 col-sm-12 col-xs-12">
+									<div class="p-2 py-4">
+										<div class="row px-2">
+											<div class="col-lg-8 col-sm-12 col-xs-12">
+												<h5
+													class="myBodyHeader text-left"
+												>
+													Buzz Away...
+													<span class="myTextColor"
+														>Expand Your
+														Network</span
+													>
+												</h5>
+											</div>
+											<div class="col-lg-4 float-right">
+												<div
+													class="input-group input-focus"
+												>
+													<div
+														class="input-group-prepend"
+													>
+														<span
+															class="input-group-text bg-white"
+															><i
+																class="fas fa-search"
+															></i
+														></span>
+													</div>
+													<input
+														id="myInput"
+														type="text"
+														placeholder="Search"
+														class="form-control border-left-0"
+														onkeyup="myFunction()"
+
+													/>
+												</div>
+											</div>
+
+											
+										</div>
+									</div>
+									<!-- STUDENTS GRID -->
+									<div>
+										<div id="filteredStudents" class="mt-4 ml-3">
+												
+											</div>
+										<div
+											id="TorontoCard"
+											class="card mr-3 mb-3"
+										>
+											<div
+												class="myBorderBottom"
+												id="headerToronto"
+											></div>
+											<div
+												id="University of Toronto"
+											></div>
+										</div>
+										<div
+											id="McMasterCard"
+											class="card mr-3 mb-3"
+										>
+											<div
+												class="myBorderBottom"
+												id="headerMcMaster"
+											></div>
+											<div id="McMaster University"></div>
+										</div>
+										<div
+											id="YorkCard"
+											class="card mr-3 mb-3"
+										>
+											<div
+												class="myBorderBottom"
+												id="headerYork"
+											></div>
+											<div id="York University"></div>
+										</div>
+										<div
+											id="WesternCard"
+											class="card mr-3 mb-3"
+										>
+											<div
+												class="myBorderBottom"
+												id="headerWestern"
+											></div>
+											<div id="Western University"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

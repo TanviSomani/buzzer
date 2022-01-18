@@ -1,0 +1,175 @@
+.myBody {
+	width: 100%;
+	margin-inline: auto;
+	color: black;
+}
+
+.myBorderRight {
+	border-right: 1px solid rgb(216, 216, 216);
+}
+
+.myBorderBottom {
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.myBodyHeader {
+	color: #f79240;
+}
+
+.myTextColor {
+	color: black;
+}
+
+.myBadgeEngineering {
+	background-color: rgb(2, 202, 202);
+	color: #fff;
+	font-size: 14px;
+}
+
+.myBadgeScience {
+	background-color: #4c7af1;
+	color: #fff;
+	font-size: 14px;
+}
+
+.myBadgeArchitecture {
+	background-color: #fbb437;
+	color: #fff;
+	font-size: 14px;
+}
+
+.myBadgeLaw {
+	background-color: #e43f57;
+	color: #fff;
+	font-size: 14px;
+}
+
+.myInterest {
+	font-size: 14px;
+	color: gray;
+}
+
+.myBuzzButton {
+	background-color: #f79240;
+	color: #fff;
+}
+
+.filterText {
+	font-size: 14px;
+}
+
+/* Charts */
+.donut-chart {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 2rem auto;
+	border-radius: 100%;
+}
+
+.donut-chart .myCenter {
+	background-image: url("images/booksImage.jpg");
+	position: relative;
+	top: 30px;
+	left: 30px;
+	height: 140px;
+	width: 140px;
+	border-radius: 80px;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.clip {
+	border-radius: 50%;
+	clip: rect(0px, 200px, 200px, 100px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.item {
+	border-radius: 50%;
+	clip: rect(0px, 100px, 200px, 0px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	font-family: monospace;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+#section1 {
+	transform: rotate(0deg);
+}
+
+#section1 .item {
+	background-color: #fbb437;
+	transform: rotate(60deg);
+}
+
+#section2 {
+	transform: rotate(65deg);
+}
+
+#section2 .item {
+	background-color: #fa9e55;
+	transform: rotate(40deg);
+}
+
+#section3 {
+	transform: rotate(110deg);
+}
+
+#section3 .item {
+	background-color: #e43f57;
+	transform: rotate(60deg);
+}
+
+#section4 {
+	transform: rotate(175deg);
+}
+
+#section4 .item {
+	background-color: #4c7af1;
+	transform: rotate(180deg);
+}
+
+ul {
+	list-style: none;
+}
+
+.torontoClass li::before {
+	content: "•";
+	color: #4c7af1;
+	display: inline-block;
+	width: 1em;
+	font-size: 25px;
+	margin-left: -1em;
+}
+
+.mcMasterClass li::before {
+	content: "•";
+	color: #fbb437;
+	display: inline-block;
+	width: 1em;
+	font-size: 25px;
+	margin-left: -1em;
+}
+
+.yorkClass li::before {
+	content: "•";
+	color: #e43f57;
+	display: inline-block;
+	width: 1em;
+	font-size: 25px;
+	margin-left: -1em;
+}
+
+.westernClass li::before {
+	content: "•";
+	color: #fa9e55;
+	display: inline-block;
+	width: 1em;
+	font-size: 25px;
+	margin-left: -1em;
+}
